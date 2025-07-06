@@ -67,7 +67,6 @@ public class Biblioteca {
         autores.removeIf(autor -> autor.getId() == id);
     }
 
-    // Métodos para gerenciar empréstimos
     public void empLivro(Livro livro, String nomeUsuario) {
         if (livro.isDisponivel()) {
             Emprestimo emprestimo = new Emprestimo(livro, nomeUsuario);
