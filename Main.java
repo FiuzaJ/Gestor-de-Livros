@@ -23,7 +23,7 @@ public class Main {
         biblioteca.addLivro(lv3);
 
         while (true) {
-            System.out.println("Deseja ver os livros disponíveis? (sim/nao)");
+            System.out.println("Deseja ver os livros disponíveis? (sim ou nao)");
             String resposta = scanner.nextLine().toLowerCase();
 
             if (resposta.equals("sim")) {
@@ -37,7 +37,7 @@ public class Main {
                         System.out.println(livro.getId() + ": " + livro.getTitulo());
                     }
 
-                    System.out.println("Digite o ID do livro que você deseja emprestar:");
+                    System.out.println("Digite o ID do livro que você deseja:");
                     int idLivro = scanner.nextInt();
                     scanner.nextLine();
 
@@ -50,14 +50,14 @@ public class Main {
                         biblioteca.empLivro(livroSelec, nomeUsuario);
                         System.out.println("O livro " + livroSelec.getTitulo() + " foi emprestado para " + nomeUsuario);
                     } else {
-                        System.out.println("Livro não encontrado ou não disponível para empréstimo.");
+                        System.out.println("Livro não foi encontrado ou não está disponível para empréstimo.");
                     }
                 }
             } else if (resposta.equals("nao")) {
-                System.out.println("Obrigado por utilizar o sistema da biblioteca.");
+                System.out.println("Obrigado por utilizar o Gestor de Livros.");
                 break; 
             } else {
-                System.out.println("Resposta inválida. Por favor, responda com 'sim' ou 'não'.");
+                System.out.println("Resposta inválida. Por favor, responda apenas com 'sim' ou 'não'.");
             }
         }
 
