@@ -6,7 +6,6 @@ public class Biblioteca {
     private List<Autor> autores = new ArrayList<>();
     private List<Emprestimo> emprestimos = new ArrayList<>();
 
-    // Métodos para gerenciar livros
     public void addLivro(Livro livro) {
         livros.add(livro);
     }
@@ -47,7 +46,6 @@ public class Biblioteca {
         livros.removeIf(livro -> livro.getId() == id);
     }
 
-    // Métodos para gerenciar autores
     public void addAutor(Autor autor) {
         autores.add(autor);
     }
