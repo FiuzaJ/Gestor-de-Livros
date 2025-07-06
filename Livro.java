@@ -12,7 +12,7 @@ public class Livro {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.disponivel = true;  // Inicialmente, todos os livros são disponibilizados
+        this.disponivel = true;
         this.dataCad = new Date();
         this.dataAtt = new Date();
     }
